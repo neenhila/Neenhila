@@ -24,6 +24,15 @@ I'm trying to add at least one new function to bot in everyday. So, now bot can 
 
 ## 👥 | Contact
 <div align="center">
+<center>
+                <marquee direction="left" style="position: fixed;
+                    left: 0;
+                    width: 1000px;
+                    height: 40px;
+                    margin-bottom: 3px;
+                    font-family: 'Uchen', serif;
+                    background:none;"><strong>Fun Commands, Moderating Commands, Welcome and Leave Messages, Music Commands, Register Commands, Server Bank Account Commands etc. (just tell us what you want!)</strong></marquee>
+            </center>
 <a href="https://discord.gg/ZvAygZGwPJ"><img src="https://discordapp.com/api/guilds/868618227310280744/widget.png?style=banner1" alt="Discord Banner 1"/></a>
 </div>
 
