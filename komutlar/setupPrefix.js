@@ -4,9 +4,9 @@ module.exports = {
     name: "setupPrefix",
     usage: "prefix",
     description: "Prefix'i ayarlamanızı sağlar.",
-    userPermissions: ["ADMINISTRATOR"],
     execute(message, prefix){
         const args = message.content.slice().split(" ");
+        if(!message.member.hasPermission("ADMINISTRATOR")) return;
 
         if(!args[1]){
             return message.reply(`Değiştirilecek prefixi belirtmediniz! **Şu anki prefixiniz: \`${data.prefix}\`** `);
