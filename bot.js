@@ -77,9 +77,7 @@ client.on("message", async message => {
         if (!message.content.startsWith(data.prefix) || message.author.bot) return;
         const args = message.content.slice(data.prefix.length).trim().split(/ +/);
         const command = args.shift().toLowerCase();
-        if(command === "add"){
-            if(!message.member.hasPermission("ADMINISTRATOR")) return;
-
+        if(command === "add" && message.member.hasPermission("ADMINISTRATOR")){
             client.emit("guildMemberAdd", message.member)
         }
         if (!client.commands.has(command)) return;
