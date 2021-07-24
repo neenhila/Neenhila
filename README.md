@@ -24,10 +24,8 @@ I'm trying to add at least one new function to bot in everyday. So, now bot can 
 
 ## 👥 | Contact
 <div align="center">
-<a href="https://discord.gg/ZvAygZGwPJ"><img src="https://i.ibb.co/X5hvTQD/image.png" alt="image" border="0" style="top: 5px" width="250" height="150"><img src="https://discordapp.com/api/guilds/868618227310280744/widget.png?style=banner1" alt="Discord Banner 1"/></a>
+<a href="https://discord.gg/ZvAygZGwPJ"><img src="https://i.ibb.co/VJGsbHs/image.png" alt="image" border="0"><img src="https://discordapp.com/api/guilds/868618227310280744/widget.png?style=banner1" alt="Discord Banner 1"/><img src="https://i.ibb.co/dpFY15C/image.png" alt="image" border="0></a>
 </div>
-<div align="right">
-<img src="https://i.ibb.co/vHSqYGq/image.png" alt="image" border="0" width="300" height="200">
-</div>
+
 
 
