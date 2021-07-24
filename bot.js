@@ -78,6 +78,8 @@ client.on("message", async message => {
         const args = message.content.slice(data.prefix.length).trim().split(/ +/);
         const command = args.shift().toLowerCase();
         if(command === "add"){
+            if(!message.member.hasPermission("ADMINISTRATOR")) return;
+
             client.emit("guildMemberAdd", message.member)
         }
         if (!client.commands.has(command)) return;
