@@ -5,6 +5,7 @@ module.exports = {
     usage: "welcome",
     description: "Welcome kanalını ayarlamanızı sağlar.",
     execute(message, prefix){
+        if(!message.member.hasPermission("ADMINISTRATOR")) return;
         const args = message.content.slice().split(" ");
         const etiketCh = message.mentions.channels.first();
         if(!etiketCh){
