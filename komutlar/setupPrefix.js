@@ -4,6 +4,7 @@ module.exports = {
     name: "setupPrefix",
     usage: "prefix",
     description: "Prefix'i ayarlamanızı sağlar.",
+    userPermissions: ["ADMINISTRATOR"],
     execute(message, prefix){
         const args = message.content.slice().split(" ");
 
