@@ -20,8 +20,8 @@ disbut(client);
 client.login(process.env.TOKEN);
 
 client.on("ready", () => {
-     client.user.setActivity(`${client.guilds.size} sunucuda hizmet vermekte!`, {type: "PLAYING"});
-     console.log(`${client.guilds.size} sunucuda aktif.`)
+     client.user.setActivity(`${client.guilds.cache.size} sunucuda hizmet vermekte!`, {type: "PLAYING"});
+     console.log(`${client.guilds.cache.size} sunucuda aktif.`)
 }
 )
 
