@@ -23,4 +23,4 @@ Setup a custom prefix => !prefix newprefix (Example: !prefix &)
 I'm trying to add at least one new function to bot in everyday. So, now bot can look like basic! (As it..) But don't worry! I'm updating it everyday. So feel safe to add bot into your server to get announced firstly!
 
 ## 👥 | Contact
-<iframe id= "first" width="350" height="500" src="https://discord.com/widget?id=868618227310280744&theme=dark"></iframe>
+<img width="350" height="500" src="https://discord.com/widget?id=868618227310280744&theme=dark"></img>
