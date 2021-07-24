@@ -24,7 +24,6 @@ I'm trying to add at least one new function to bot in everyday. So, now bot can 
 
 ## 👥 | Contact
 <div align="center">
-                <marquee behavivor = "asasaasas" ></marquee>
-<a href="https://discord.gg/ZvAygZGwPJ"><img src="https://discordapp.com/api/guilds/868618227310280744/widget.png?style=banner1" alt="Discord Banner 1"/></a>
+<a href="https://discord.gg/ZvAygZGwPJ"><img src="https://ibb.co/TRrVM43"><img src="https://discordapp.com/api/guilds/868618227310280744/widget.png?style=banner1" alt="Discord Banner 1"/><img src="https://ibb.co/Y3xQZMQ"></a>
 </div>
 
