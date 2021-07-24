@@ -12,7 +12,7 @@ module.exports = {
         once: true,
         description: "Bot çalışmaya başladığında yapılacaktır.",
         execute(client) {
-
+            client.user.setActivity(`${client.guilds.size} sunucuda hizmet vermekte!`, {type: "PLAYING"})
             console.log(`--------------Komutlar----------------`)
             commandFiles.forEach(x => {
                         console.log(`${x.split(`.js`)} komutu başarıyla yüklendi.`)
