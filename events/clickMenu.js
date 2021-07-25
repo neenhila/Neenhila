@@ -3,6 +3,7 @@ const Client = new Discord.Client();
 module.exports = {
   name: "clickMenu",
   description: "Menü eventi",
+  once: false,
   execute(){
   client.on("clickMenu", async menu => {
                         await menu.clicker.fetch();
