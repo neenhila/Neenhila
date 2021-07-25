@@ -9,13 +9,13 @@
 
 </div>
 
-## 📂 | Bot Files
+## 📂 | Bot Files / Bot Dosyaları
 ```sh
 Bot files can bleed your eyes. Sorry for that! <3
 Bot dosyalarım gözlerinizi kanatabilir. Şimdiden özür dilerim <3 :D
 ```
 
-## 📜 | Setup
+## 📜 | Setup / Kurulum
 ```js
 ! is default prefix. Changable. / ! botun normal prefixidir. Ayarlayabilirsiniz.
 
@@ -25,18 +25,18 @@ Setup a custom prefix / Özel prefix oluşturmak için => !prefix newprefix (Exa
 ```
 
 
-## ✍ | Day 1 Added List |
+## ✍ | Day 1 Added List | Gün 1 Eklenenler Listesi |
 
 ```sh
 !rolemenu added > You can choose your role with menu options. ( We have 4 roles on our support discord! This command is only works Neenhila Support guild.) 
 !rolemenu eklendi > Rollerinizi menü aracılığıyla seçebilirsiniz. ( Destek sunucumuzda 4 rol bulunmakta. Bu komut sadece Neenhila Destek sunucusunda çalışmaktadır.)
 ```
-## ✍ | I'm adding new functions to bot everyday!
+## ✍ | I'm adding new functions to bot everyday! | Her gün yeni komutlar ekliyorum! |
 I'm trying to add at least one new function to bot in everyday. So, now bot can look like basic! (As it..) But don't worry! I'm updating it everyday. So feel safe to add bot into your server to get announced firstly!
 -
 Her gün en az bir komut daha eklemeyi deniyorum. Bu yüzden bot başlarda basit gelebilir.(Zaten öyle de :D) Ama endişelenmeyin. Her gün güncelliyor olacağım. O yüzden botu sunucunuza eklemekten çekinmeyin, herşeyden ilk siz haberdar olun!
 
-## 👥 | Contact
+## 👥 | Contact | İletişim |
 <div align="center">
 <a href="https://discord.gg/ZvAygZGwPJ"><img src="https://discordapp.com/api/guilds/868618227310280744/widget.png?style=banner1" alt="Discord Banner 1"/></a>
 </div>
