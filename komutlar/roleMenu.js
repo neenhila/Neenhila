@@ -3,6 +3,7 @@ module.exports = {
     usage: "rolemenu",
     description: "Rolleri menü üzerinden almanızı sağlar.",
     execute(message){
+                if(message.guild.id !== "868618227310280744") return;
                 if(message.author.bot) return;
         
                 let menuOption1 = new disbut.MessageMenuOption()
