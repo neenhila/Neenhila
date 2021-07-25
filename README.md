@@ -7,7 +7,7 @@
 
 ## 📂 | Bot Files
 ```sh
-Bot files are can bleed your eyes. Sorry for that! <3
+Bot files can bleed your eyes. Sorry for that! <3
 ```
 
 ## 📜 | Setup
