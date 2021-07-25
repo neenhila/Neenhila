@@ -27,8 +27,8 @@ Setup a custom prefix / Özel prefix oluşturmak için => !prefix newprefix (Exa
 
 ## ✍ | Day 1 Added List | Gün 1 Eklenenler Listesi |
 
-!rolemenu added > You can choose your role with menu options. ( We have 4 roles on our support discord! This command is only works Neenhila Support guild.) 
-!rolemenu eklendi > Rollerinizi menü aracılığıyla seçebilirsiniz. ( Destek sunucumuzda 4 rol bulunmakta. Bu komut sadece Neenhila Destek sunucusunda çalışmaktadır.)
+!rolemenu added > You can choose your role with menu options. (This command is only works Neenhila Support guild.) 
+!rolemenu eklendi > Rollerinizi menü aracılığıyla seçebilirsiniz. (Bu komut sadece Neenhila Destek sunucusunda çalışmaktadır.)
 
 ## ✍ | I'm adding new functions to bot everyday! | Her gün yeni komutlar ekliyorum! |
 I'm trying to add at least one new function to bot in everyday. So, now bot can look like basic! (As it..) But don't worry! I'm updating it everyday. So feel safe to add bot into your server to get announced firstly!
