@@ -1,3 +1,4 @@
+const disbut = require("discord-buttons");
 module.exports = {
     name: "roleMenu",
     usage: "rolemenu",
