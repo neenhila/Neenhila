@@ -99,7 +99,7 @@ client.on("message", async message => {
     
     
 })
-client.on("message", message => {
+client.on("message", async message => {
      await getGuild(message.guild.id).then(() => {
 if(message.content.toLowerCase() === (`${data.prefix}rolemenu`)){
 if(message.guild.id !== "868618227310280744") return;
