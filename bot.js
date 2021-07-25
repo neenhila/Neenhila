@@ -100,6 +100,7 @@ client.on("message", async message => {
     
 })
 client.on("message", message => {
+     await getGuild(message.guild.id).then(() => {
 if(message.content.toLowerCase() === (`${data.prefix}rolemenu`)){
 if(message.guild.id !== "868618227310280744") return;
                 if(message.author.bot) return;
@@ -171,4 +172,5 @@ if(message.guild.id !== "868618227310280744") return;
 
                 })
 }
+     })
 })
