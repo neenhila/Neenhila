@@ -17,7 +17,7 @@ module.exports = {
                 guild1.goodbyeCh = `${etiketCh.id}`
                 guild1.save().catch(err => console.log(err))
             })
-            message.channel.send(`Yeni hoşgeldin kanalınız <#${etiketCh.id}> olarak ayarlandı!`);
+            message.channel.send(`Yeni güle güle kanalınız <#${etiketCh.id}> olarak ayarlandı!`);
         }
     }
     
