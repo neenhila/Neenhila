@@ -1,4 +1,6 @@
 const disbut = require("discord-buttons");
+const Discord = require("discord.js");
+const client = new Discord.Client();
 module.exports = {
     name: "roleMenu",
     usage: "rolemenu",
