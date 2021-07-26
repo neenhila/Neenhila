@@ -4,11 +4,9 @@ module.exports = {
     description: "Botun pingini gösterir.",
     cooldown: 20000,
     execute(message, client, Discord){
-        if(client.ws.ping > 150) {color = "RED"} else {color = "GREEN"}
-        let emb = new Discord.MessageEmbed()
-        .setDescription(`**${client.user.tag}** olarak \`${client.ws.ping}\` ping ile hizmet vermekteyim.`)
-        .setColor(color)
-
-        message.channel.send(emb);
+        message.channel.send('Loading data').then(async (msg) =>{
+            msg.delete({timeout: 500});
+            message.channel.send(`🏓Client Latency: \`${msg.createdTimestamp - message.createdTimestamp}\` ms \nAPI Latency: \`${Math.round(client.ws.ping)}\` ms`);
+          })
     }
 }
