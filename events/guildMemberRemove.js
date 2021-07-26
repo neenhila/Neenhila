@@ -6,6 +6,7 @@ module.exports = {
     description: "Birisi sunucudan ayrıldığında çalışır.",
     once: false,
     execute(member){
+        if(member.id === client.user.id) return;
         let memberSize = member.guild.memberCount;
         if(!data.goodbyeCh){
             member.guild.channels.cache.forEach(x => {
