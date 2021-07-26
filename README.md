@@ -34,6 +34,8 @@ Setup a custom prefix / Özel prefix oluşturmak için => !prefix newprefix (Exa
 
 <p> !ping and !stats added > Now you can see bot's ping with !ping and see bot's statistics with !stats </p>
 <p> !ping ve !stats eklendi > Artık botun pingini !ping ile görebilir ve istatistiklerini !stats ile görüntüleyebilirsiniz. </p>
+<p> !help added. > Help command added. You can see everything about bot & me. </p>
+<p> !help eklendi. > Yardım komutu eklendi. Artık bot ve benim hakkımda her şeyi görebilirsiniz. </p>
 
 ## ✍ | I'm adding new functions to bot everyday! | Her gün yeni komutlar ekliyorum! |
 <p> I'm trying to add at least one new function to bot in everyday. So, now bot can look like basic! (As it..) But don't worry! I'm updating it everyday. So feel safe to add bot into your server to get announced firstly! </p>
