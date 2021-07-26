@@ -9,7 +9,7 @@ module.exports = {
         message.channel.send(`Data loading...`).then(async msj => {
             const botPing = (msj.createdTimestamp - message.createdTimestamp);
             msj.delete();
-            const btn1 = new disbut.MessageButton()
+        const btn1 = new disbut.MessageButton()
             .setLabel('Bot Hakkında')
             .setID('1').setStyle('blurple')
         const btn2 = new disbut.MessageButton()
