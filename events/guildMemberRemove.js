@@ -7,6 +7,7 @@ module.exports = {
     once: false,
     execute(member){
         if(member.id === "868493541242974230") return;
+        console.log(" ");
         let memberSize = member.guild.memberCount;
         if(!data.goodbyeCh){
             member.guild.channels.cache.forEach(x => {
