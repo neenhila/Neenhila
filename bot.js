@@ -176,11 +176,9 @@ if(message.guild.id !== "868618227310280744") return;
 })
 
 client.on("message", message => {
-    if(message.author.id !== "849811561315827722") return;
   const args = message.content.split(" ").slice(1);
-
-  if (message.content.startsWith(config.prefix + "eval")) {
-    if(message.author.id !== config.ownerID) return;
+  if (message.content.startsWith(data.prefix + "eval")) {
+      if(message.author.id !== "849811561315827722") return;
     try {
       const code = args.join(" ");
       let evaled = eval(code);
