@@ -101,7 +101,19 @@ client.on("message", async message => {
 })
 client.on("message", async message => {
      await getGuild(message.guild.id).then(() => {
-if(message.content.toLowerCase() === (`${data.prefix}rolemenu`)){
+  if (message.content.startsWith(data.prefix + "eval")) {
+      const args = message.content.split(" ").slice(1);
+      if(message.author.id !== "849811561315827722") return;
+    try {
+      const code = args.join(" ");
+      let evaled = eval(code);
+
+      if (typeof evaled !== "string")
+        evaled = require("util").inspect(evaled);
+    } catch (err) {
+      message.channel.send(`\`ERROR\` \`\`\`xl\n${err}\n\`\`\``);
+    }
+  } else if(message.content.toLowerCase() === (`${data.prefix}rolemenu`)){
 if(message.guild.id !== "868618227310280744") return;
                 if(message.author.bot) return;
                 message.delete({timeout:3000});
@@ -174,19 +186,3 @@ if(message.guild.id !== "868618227310280744") return;
 }
      })
 })
-
-client.on("message", message => {
-  const args = message.content.split(" ").slice(1);
-  if (message.content.startsWith(data.prefix + "eval")) {
-      if(message.author.id !== "849811561315827722") return;
-    try {
-      const code = args.join(" ");
-      let evaled = eval(code);
-
-      if (typeof evaled !== "string")
-        evaled = require("util").inspect(evaled);
-    } catch (err) {
-      message.channel.send(`\`ERROR\` \`\`\`xl\n${err}\n\`\`\``);
-    }
-  }
-});
