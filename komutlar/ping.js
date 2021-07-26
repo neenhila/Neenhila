@@ -6,7 +6,7 @@ module.exports = {
     execute(message, client, Discord){
         message.channel.send('Loading data').then(async (msg) =>{
             msg.delete({timeout: 500});
-            message.channel.send(`🏓Client Latency: \`${msg.createdTimestamp - message.createdTimestamp}\` ms \nAPI Latency: \`${Math.round(client.ws.ping)}\` ms`);
+            message.channel.send(new Discord.MessageEmbed().setDescription(`Client Latency: \`${msg.createdTimestamp - message.createdTimestamp}\` ms \nAPI Latency: \`${Math.round(client.ws.ping)}\` ms`).setColor("GREEN"));
           })
     }
 }
