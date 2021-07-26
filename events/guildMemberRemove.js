@@ -15,7 +15,7 @@ module.exports = {
                     }
                 }
             })
-            defaultChannel.send(`Güle güle kanalı ayarlı değil. **Ayarlamak için \`"${data.prefix}welcome"\` yazıp boşluk bırakarak __kanalı etiketleyin!__** **${member.user.username}** aramızdan ayrıldı.`)
+            defaultChannel.send(`Güle güle kanalı ayarlı değil. **Ayarlamak için \`"${data.prefix}goodbye"\` yazıp boşluk bırakarak __kanalı etiketleyin!__**\n\n **${member.user.username}** aramızdan ayrıldı.`)
         } else if(data.goodbyeCh){
             member.guild.channels.cache.get(`${data.goodbyeCh}`).send(`${member.user.username} aramızdan ayrıldı! Artık ${memberSize} kişiyiz!`)
         }
