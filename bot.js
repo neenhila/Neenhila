@@ -89,7 +89,7 @@ client.on("message", async message => {
         }
         if (!client.commands.has(command)) return;
         try {
-            client.commands.get(command).execute(message, client, Discord);
+            client.commands.get(command).execute(message);
         } catch (error) {
             console.log(`Komutu uygularken bir hata ile karşılaştım. Komut: ${command}`)
             console.log(error)
