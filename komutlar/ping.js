@@ -1,4 +1,4 @@
-module.exports = client {
+module.exports = client => {
     name: "ping",
     usage: "ping",
     description: "Botun pingini gösterir.",
