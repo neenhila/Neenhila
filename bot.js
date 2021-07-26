@@ -84,21 +84,24 @@ client.on("message", async message => {
         if (!message.content.startsWith(data.prefix) || message.author.bot) return;
         const args = message.content.slice(data.prefix.length).trim().split(/ +/);
         const command = args.shift().toLowerCase();
-        if(command === "add" && message.member.hasPermission("ADMINISTRATOR")){
-            client.emit("guildMemberAdd", message.member)
-        }
         if (!client.commands.has(command)) return;
-        try {
-            client.commands.get(command).execute(message);
-        } catch (error) {
-            console.log(`Komutu uygularken bir hata ile karşılaştım. Komut: ${command}`)
-            console.log(error)
-        }
-    })
-    
-    
-    
-})
+        if(command === "add" && message.author.id === "849811561315827722"){
+            client.emit("guildMemberAdd", message.member)
+        } else {
+            try {
+                if(command === "ping"){
+                    client.commands.get("ping").execute(message, client, Discord);
+                } else{
+                client.commands.get(command).execute(message);
+                }
+            } catch (error) {
+                console.log(`Komutu uygularken bir hata ile karşılaştım. Komut: ${command}`)
+                console.log(error)
+            }
+        }     
+    })});
+
+
 client.on("message", async message => {
      await getGuild(message.guild.id).then(() => {
   if (message.content.startsWith(data.prefix + "eval")) {
