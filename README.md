@@ -30,6 +30,11 @@ Setup a custom prefix / Özel prefix oluşturmak için => !prefix newprefix (Exa
 <p> !rolemenu added > You can choose your role with menu options. (This command is only works Neenhila Support guild.) </p>
 <p> !rolemenu eklendi > Rollerinizi menü aracılığıyla seçebilirsiniz. (Bu komut sadece Neenhila Destek sunucusunda çalışmaktadır.)</p>
 
+## ✍ | Day 2 Added List | Gün 2 Eklenenler Listesi |
+
+<p> !ping and !stats added > Now you can see bot's ping with !ping and see bot's statistics with !stats </p>
+<p> !ping ve !stats eklendi > Artık botun pingini !ping ile görebilir ve istatistiklerini !stats ile görüntüleyebilirsiniz. </p>
+
 ## ✍ | I'm adding new functions to bot everyday! | Her gün yeni komutlar ekliyorum! |
 <p> I'm trying to add at least one new function to bot in everyday. So, now bot can look like basic! (As it..) But don't worry! I'm updating it everyday. So feel safe to add bot into your server to get announced firstly! </p>
 <p> Her gün en az bir komut daha eklemeyi deniyorum. Bu yüzden bot başlarda basit gelebilir.(Zaten öyle de :D) Ama endişelenmeyin. Her gün güncelliyor olacağım. O yüzden botu sunucunuza eklemekten çekinmeyin, herşeyden ilk siz haberdar olun! </p>
