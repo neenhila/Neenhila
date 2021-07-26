@@ -78,7 +78,10 @@ module.exports = {
 
         const filter = (button) => button.clicker.user.id === message.author.id; //user filter (author only)
         const collector = message.createButtonCollector(filter, { time: 30000 });
-        client.on("clickButton", btn => {
+        client.on("clickButton", async btn => {
+            await btn.clicker.fetch();
+            
+            if(btn.clicker.id !== message.author.id) return;
             btn.reply.defer();
             if (btn.id === '1') {
                 msg.edit({
