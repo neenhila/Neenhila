@@ -1,7 +1,4 @@
-const Discord = require("discord.js")
-const client = new Discord.Client();
-
-module.exports = {
+module.exports = client {
     name: "ping",
     usage: "ping",
     description: "Botun pingini gösterir.",
