@@ -91,7 +91,9 @@ client.on("message", async message => {
             try {
                 if(command === "ping"){
                     client.commands.get("ping").execute(message, client, Discord);
-                } else{
+                } else if(command === "stats"){
+                    client.commands.get("stats").execute(message, client, Discord);
+                } else {
                 client.commands.get(command).execute(message);
                 }
             } catch (error) {
