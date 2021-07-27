@@ -85,9 +85,7 @@ module.exports = {
         const collector = message.createButtonCollector(filter, { time: 30000 });
         client.on("clickButton", async btn => {
             await btn.clicker.fetch();
-            
-            if(btn.clicker.id !== message.author.id) return;
-            btn.reply.defer();
+            await btn.reply.defer();
             if (btn.id === '1') {
                 msg.edit({
                     embed: hakkında,
