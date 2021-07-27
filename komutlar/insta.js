@@ -7,7 +7,7 @@ module.exports = {
     description: "Instagram hesabınız hakkında bilgi verir.",
     async execute(message, Discord){
         const kullanıcı = message.content.split(" ").slice(1).join(" ");
-        await userInstagram(`${kullanıcı}`).then(data => {
+        await userInstagram(`${kullanıcı}`).then(async data => {
             if(!data || data === null || data === undefined) return message.reply(`Kullanıcı adını lütfen @ olmadan sadece isim olarak giriniz.`)
             if(data.isBusinessAccount === false) {ishesabi = "Hayır"} else {ishesabi = "Evet"};
             if(data.isPrivate === false) { gizlihesap = "Hayır"} else {gizlihesap = "Evet"};
@@ -28,7 +28,7 @@ module.exports = {
                 {name: "Onaylı hesap mı?", value: `${onaylihesap}`, inline: true},
                 {name: "Gönderi Sayısı", value: `\`${data.postsCount}\``, inline: false}
             )
-            message.channel.send(embed)
+           await message.channel.send(embed)
         })
         
 }
