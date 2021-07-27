@@ -2,7 +2,7 @@ module.exports = {
     name: "ping",
     usage: "ping",
     description: "Botun pingini gösterir.",
-    cooldown: 20000,
+    cooldown: 5,
     execute(message, client, Discord){
         message.channel.send('Loading data').then(async (msg) =>{
             msg.delete({timeout: 500});
