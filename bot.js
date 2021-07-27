@@ -86,12 +86,12 @@ client.on("message", async message => {
         const args = message.content.slice(data.prefix.length).trim().split(/ +/);
         const command = args.shift().toLowerCase();
         if (!client.commands.has(command)) return;
-        if(!cooldowns.has(command.name)){
-            cooldowns.set(command.name, new Discord.Collection())
+        if(!cooldowns.has(command)){
+            cooldowns.set(command, new Discord.Collection())
         }
         const f = require(`./komutlar/${command}.js`)
         const now = Date.now();
-        const timestamps = cooldowns.get(command.name);
+        const timestamps = cooldowns.get(command);
         if(!f.cooldown){cd = 5} else {cd = f.cooldown}
         
         const cooldownAmount = (cd) * 1000;
