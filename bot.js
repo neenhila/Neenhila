@@ -6,6 +6,7 @@ const guildSettings = require("./modeller/guildSettings.js")
 const { MessageMenuOption, MessageMenu, MessageActionRow, MessageButton } = require('discord-buttons');
 const fs = require("fs");
 client.commands = new Discord.Collection();
+const cooldowns = new Discord.Collection();
 const commandFiles = fs.readdirSync("./komutlar").filter(file => file.endsWith(".js"));
 client.events = new Discord.Collection();
 const eventFiles = fs.readdirSync("./events").filter(file => file.endsWith(".js"));
@@ -85,6 +86,28 @@ client.on("message", async message => {
         const args = message.content.slice(data.prefix.length).trim().split(/ +/);
         const command = args.shift().toLowerCase();
         if (!client.commands.has(command)) return;
+        if(!cooldowns.has(command.name)){
+            cooldowns.set(command.name, new Discord.Collection())
+        }
+        const f = require(`./komutlar/${command}.js`)
+        const now = Date.now();
+        const timestamps = cooldowns.get(command.name);
+        if(!f.cooldown){cd = 5} else {cd = f.cooldown}
+        
+        const cooldownAmount = (cd) * 1000;
+
+        if(timestamps.has(message.author.id)){
+            const expirationTime = timestamps.get(message.author.id) + cooldownAmount;
+
+            if(now < expirationTime){
+                const timeLeft = (expirationTime - now) / 1000;
+                return message.reply(`Komutu yeniden kullanabilmek için beklemeniz gereken süre \`${timeLeft}\` saniyedir.`)
+            }
+        }
+
+        timestamps.set(message.author.id, now);
+        setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
+
         if(command === "add" && message.author.id === "849811561315827722"){
             client.emit("guildMemberAdd", message.member)
         } else {
