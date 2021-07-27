@@ -5,9 +5,9 @@ module.exports = {
     usage: "insta",
     cooldown: 10,
     description: "Instagram hesabınız hakkında bilgi verir.",
-    execute(message, Discord){
+    async execute(message, Discord){
         const kullanıcı = message.content.split(" ").slice(1).join(" ");
-        userInstagram(`${kullanıcı}`).then(data => {
+        await userInstagram(`${kullanıcı}`).then(data => {
             if(!data || data === null || data === undefined) return message.reply(`Kullanıcı adını lütfen @ olmadan sadece isim olarak giriniz.`)
             if(data.isBusinessAccount === false) {ishesabi = "Hayır"} else {ishesabi = "Evet"};
             if(data.isPrivate === false) { gizlihesap = "Hayır"} else {gizlihesap = "Evet"};
