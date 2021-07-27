@@ -45,7 +45,9 @@ module.exports = {
                 {name: `<a:AyarGif:869301910853795921> welcome`, value:`>>> Sunucunuza katılan kişilere hoşgeldin mesajı atacağı kanalı ayarlar. Örnek: **!welcome #hosgeldin-kanalı** _(etiketlemeniz gerekir)_`, inline: false},
                 {name: `<a:AyarGif:869301910853795921> goodbye`, value:`>>> Sunucunuzdan ayrılan kişilerin mesajını atacağı kanalı ayarlar. Örnek: **!goodbye #ayrılanlar-kanalı** _(etiketlemeniz gerekir)_`, inline: false},
                 {name: `<a:AyarGif:869301910853795921> ping`, value:`>>> Botun ve API iletişiminin pingini gösterir. Örnek: **!ping**`, inline: false},
-                {name: `<a:AyarGif:869301910853795921> stats`, value:`>>> Botun istatistiklerini içeren mesaj atar. Örnek: **!stats**`, inline: false}
+                {name: `<a:AyarGif:869301910853795921> stats`, value:`>>> Botun istatistiklerini içeren mesaj atar. Örnek: **!stats**`, inline: false},
+                {name: `<a:AyarGif:869301910853795921> yeninick`, value:`>>> Yeni nick oluşturabilirsiniz. Örnek: **!yeninick**`, inline: false},
+                {name: `<a:AyarGif:869301910853795921> yenisifre`, value:`>>> DM kutunuza yeni güçlü bir şifre gönderir. Örnek: **!yenisifre**`, inline: false}
             )
             .setTimestamp()
             .setFooter(`${message.author.tag} tarafından istendi.`, message.author.displayAvatarURL({dynamic: true}))
