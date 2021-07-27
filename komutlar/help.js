@@ -35,7 +35,7 @@ module.exports = {
 
         const hakkında = new Discord.MessageEmbed()
             .setTitle('Bot Hakkında')
-            .setThumbnail(client.user.displayAvatarURL());
+            .setThumbnail(client.user.displayAvatarURL())
             .setDescription(`Merhaba, ben Neenhila. (Evet, bota kendi ismimi verdim. :d) Bu botu 2 aylık kod deneyimimle yazdım. Kodları yazarken Stackoverflow sitesi haricinde bir site kullandığımı hatıırlamıyorum. Genellikle deneyip, yanlışlarımı düzelterek öğrenmeyi daha güzel bulduğum için böyle uğraştım. Bu bottan önce tam 29 tane private bot yaptım. Ayrıca 4 farklı public sunucuya da ücret karşılığı bot yaptım fakat hiçbirinden istediğim geridönüşü alamadım çünkü botlarım yeterli değildi.\n\n   Fakat bu sefer, elimden geldiğince temiz bir bot yapmaya çalışıyorum ve bunu da açık kaynak olarak sizlerle paylaşarak yapıyorum. Bu sayede yeni başlayan ve öğrenme sürecini başka türlü algılayan arkadaşlar da bu şekilde rahatlıkla öğrenebilir.\n\n >>> Bu hesap hatırladığım kadarıyla 20-21 Temmuz 2021 gibi oluşturuldu. Hep birlikte gelişimini takip edebiliriz. Github linkine aşağıdaki butondan tıklayarak ulaşabilirsiniz. README dosyasına günlük eklemeler yapıyorum! Yıldız atmayı unutmayın <3  `)
             .setImage(`https://i.ibb.co/zZDRLzg/802825.jpg`)
             .setFooter(`${message.author.tag} tarafından istendi.`, message.author.displayAvatarURL({dynamic: true}))
