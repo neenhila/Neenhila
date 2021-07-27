@@ -1,5 +1,7 @@
 <div align="center">
   <h1>Neenhila Discord Bot</h1>
+  <h2> Database: MongoDB </h2>
+  <h2> DJS: v12 </h2>
   <p> Multi-server welcome &amp; goodbye (and more) bot.</p>
   <p> Birden fazla sunucuda çalışan hoşgeldin ve güle güle (ve daha fazlası) botu :) </p>
 
