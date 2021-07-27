@@ -78,7 +78,7 @@ module.exports = {
             .setFooter(`${message.author.tag} tarafından istendi!`, message.author.displayAvatarURL({dynmaic: true}))
             .setTimestamp()
 
-        let msg = await message.channel.send({ embed: hakkında, components: row }).then(mesaj => mesaj.delete({timeout: 40000}));
+        let msg = await message.channel.send({ embed: hakkında, components: row });
 
 
         const filter = (button) => button.clicker.user.id === message.author.id; //user filter (author only)
