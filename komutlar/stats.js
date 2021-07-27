@@ -1,7 +1,7 @@
 module.exports = {
     name: "stats",
     usage: "stats",
-    cooldown: 20000,
+    cooldown: 5,
     description: "Sunucunun statlarını gösterir.",
     execute(message, client, Discord){
         message.channel.send("Data yükleniyor.").then(msg => {
