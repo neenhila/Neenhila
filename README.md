@@ -37,6 +37,12 @@ Setup a custom prefix / Özel prefix oluşturmak için => !prefix newprefix (Exa
 <p> !help added. > Help command added. You can see everything about bot & me. </p>
 <p> !help eklendi. > Yardım komutu eklendi. Artık bot ve benim hakkımda her şeyi görebilirsiniz. </p>
 
+## ✍ | Day 3 Added List | Gün 3 Eklenenler Listesi |
+
+<p> !yeninick and !yenisifre added. > Now you can generate a new nick with !yeninick and generate a strong password to your DM with !yenisifre </p>
+<p> !yeninick ve !yenisifre eklendi. > Artık !yeninick yazarak kendinize yeni bir nick oluşturabilir. !yenisifre yazarak özel kutunuza güçlü bir şifre alabilirsiniz. </p>
+
+
 ## ✍ | I'm adding new functions to bot everyday! | Her gün yeni komutlar ekliyorum! |
 <p> I'm trying to add at least one new function to bot in everyday. So, now bot can look like basic! (As it..) But don't worry! I'm updating it everyday. So feel safe to add bot into your server to get announced firstly! </p>
 <p> Her gün en az bir komut daha eklemeyi deniyorum. Bu yüzden bot başlarda basit gelebilir.(Zaten öyle de :D) Ama endişelenmeyin. Her gün güncelliyor olacağım. O yüzden botu sunucunuza eklemekten çekinmeyin, herşeyden ilk siz haberdar olun! </p>
