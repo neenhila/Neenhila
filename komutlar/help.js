@@ -1,7 +1,7 @@
 module.exports = {
     name: "help",
     usage: "help",
-    cooldown: -3,
+    cooldown: 50,
     description: "Yardım menüsünü açar.",
     async execute(message, client, Discord, disbut) {
         if (message.author.bot) return;
