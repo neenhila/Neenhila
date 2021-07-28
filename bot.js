@@ -130,7 +130,8 @@ client.on("message", async message => {
 
 
 client.on("message", async message => {
-     await getGuild(message.guild.id).then(() => {
+    if(!message.guild) return;
+    await getGuild(message.guild.id).then(() => {
   if (message.content.startsWith(data.prefix + "eval")) {
       const args = message.content.split(" ").slice(1);
       if(message.author.id !== "849811561315827722") return;
