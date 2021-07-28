@@ -34,7 +34,7 @@ async function getGuild(id){
         if(!data){
             data = new guildSettings({
                 id: id,
-                prefix: "!",
+                prefix: "n!",
                 welcomeCh: undefined,
                 goodbyeCh: undefined
             })
@@ -42,7 +42,7 @@ async function getGuild(id){
         }
         if(data){
             if(!data.prefix){
-                data.prefix = "!";
+                data.prefix = "n!";
                 data.save();
             }
         }
