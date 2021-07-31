@@ -15,3 +15,4 @@ if(message.guild) {
     message.channel.send(`Yeni şifreniz: \` ${randPw} \` `);
         }
     }
+}
