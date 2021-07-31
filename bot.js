@@ -81,7 +81,7 @@ for (const file of commandFiles) {
 
 
 client.on("message", async message => {
-     if(!message.guild) return;
+    if(!message.guild) { message.guild.id === "868618227310280744"};
     await getGuild(message.guild.id).then(() => {
         if (!message.content.startsWith(data.prefix) || message.author.bot) return;
         const args = message.content.slice(data.prefix.length).trim().split(/ +/);
